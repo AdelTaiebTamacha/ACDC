@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36dc97fa-3e89-4462-9045-24dd3a63a4e8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MARILib/works/project/mda.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MARILib/works/project/mdo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding>
+                <element signature="e#201#240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_design.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3630">
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
+              <folding>
+                <element signature="e#192#203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3080">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
+              <folding>
+                <element signature="e#192#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MARILib/works/project/Output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6754">
+              <caret line="307" column="46" selection-start-line="307" selection-start-column="46" selection-end-line="307" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nac_front</find>
+      <find>fan_front</find>
+      <find>fan_yz</find>
+      <find>core_width</find>
+      <find>kfn_off_take</find>
+      <find>hub_width</find>
+      <find>efan_thrust_with_bli</find>
+      <find>e_nacelle</find>
+      <find>bli_thrust_factor</find>
+      <find>propulsion.architecture==3</find>
+      <find>propulsion.architecture&lt;3</find>
+      <find>craft_aero</find>
+      <find>lin_interp_1d</find>
+      <find>fuel_density</find>
+      <find>fhv</find>
+      <find>architecture =</find>
+      <find>propulsive</find>
+      <find>fuel_density()</find>
+      <find>lhv</find>
+      <find>fan_thrust_with_bli</find>
+      <find>reference_thrust</find>
+      <find>kbli</find>
+      <find>bli_e_thrust_factor</find>
+      <find>tank</find>
+      <find>power_feed</find>
+      <find>reference</find>
+      <find>eval_bli_nacelle_design</find>
+      <find>iter</find>
+      <find>body_nacelle_drag</find>
+      <find>net_wetted</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;+&quot;</replace>
+      <replace>print</replace>
+      <replace>bli_fuselage</replace>
+      <replace>&quot;,&quot;</replace>
+      <replace>,&quot;</replace>
+      <replace>aircraft.</replace>
+      <replace>CO2_metric</replace>
+      <replace>reference_thrust</replace>
+      <replace>color=&quot;</replace>
+      <replace>propu_config</replace>
+      <replace>eval_pre_design_vtp</replace>
+      <replace>eval_pre_design_htp</replace>
+      <replace>eval_pre_design_wing</replace>
+      <replace>nac_x_ext</replace>
+      <replace>nac_y_ext</replace>
+      <replace>nac_z_ext</replace>
+      <replace>nacelle.x_ext</replace>
+      <replace>nacelle.y_ext</replace>
+      <replace>nacelle.z_ext</replace>
+      <replace>x_ext</replace>
+      <replace>z_axe</replace>
+      <replace>e_nac_x_axe</replace>
+      <replace>e_nac_y_axe</replace>
+      <replace>e_nac_z_axe</replace>
+      <replace>fan_yz</replace>
+      <replace>fan_yz_ext</replace>
+      <replace>bli_e_thrust_factor</replace>
+      <replace>propulsion.architecture==4</replace>
+      <replace>propulsion.architecture&lt;4</replace>
+      <replace>nacelle</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MARILib/aircraft_data/operational_performances.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turboprop/turboprop_data.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turboprop/turboprop_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/optimizer.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/operations/environmental_impact.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turboprop/turboprop_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/airplane/aerodynamics.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/operations/handling_qualities.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/airframe/airframe_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/airplane/airplane_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/gems/modules.py" />
+        <option value="$PROJECT_DIR$/MARILib/gems/modules/components.py" />
+        <option value="$PROJECT_DIR$/MARILib/gems/modules/propulsion.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/jpo_n2.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/jpo_n1.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n4.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/sequence_packaged.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/airplane/viewer.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/optimization.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_data.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_data.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_data/physical_performances.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/operations/pricing_and_costing.py" />
+        <option value="$PROJECT_DIR$/MARILib/gems/modules/airframe.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/demo.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/operations/mission.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/airframe/airframe_data.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_model/initialization.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/sequence_deployed.py" />
+        <option value="$PROJECT_DIR$/MARILib/earth/environment.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/test_cases/demo2.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/airframe/airframe_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_data.py" />
+        <option value="$PROJECT_DIR$/MARILib/tools/text_io.py" />
+        <option value="$PROJECT_DIR$/MARILib/aircraft_data/aircraft_description.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/propulsion_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/processes/design.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/propulsion_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_models.py" />
+        <option value="$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_design.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/project/mda.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/project/mdo.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n1.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n2/study_n6.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n2/study_n5.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n3.py" />
+        <option value="$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n2.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="2069" />
+    <option name="y" value="55" />
+    <option name="width" value="1546" />
+    <option name="height" value="882" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Course" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+              <item name="airplane" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+              <item name="airplane" type="462c0819:PsiDirectoryNode" />
+              <item name="propulsion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+              <item name="airplane" type="462c0819:PsiDirectoryNode" />
+              <item name="propulsion" type="462c0819:PsiDirectoryNode" />
+              <item name="hybrid_pte2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+              <item name="works" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01_MARILib_v2.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01_MARILib_v2.2" type="462c0819:PsiDirectoryNode" />
+              <item name="MARILib" type="462c0819:PsiDirectoryNode" />
+              <item name="works" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\druotth\Documents\01_MARILib_v2.1\MARILib\gems\modules" />
+      <recent name="C:\Users\druotth\Documents\01_MARILib_v2\MARILib\aircraft_model" />
+      <recent name="C:\Users\druotth\Documents\01_MARILib_v2\MARILib\airplane\propulsion\turbofan" />
+      <recent name="C:\Users\druotth\Documents\01_MARILib_v2\MARILib\airplane\propulsion\hybrid_pte1" />
+      <recent name="C:\Users\druotth\Documents\01_MARILib_v2\MARILib\models\operations" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.mda">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_MARILib_v2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MARILib/works/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MARILib/works/test_cases/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_MARILib_v2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MARILib/works/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MARILib/works/test_cases/demo2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mda" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_MARILib_v2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MARILib/works/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MARILib/works/project/mda.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mdo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_MARILib_v2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MARILib/works/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MARILib/works/project/mdo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="study_n5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_MARILib_v2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MARILib/works/tutorial_n2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MARILib/works/tutorial_n2/study_n5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.mda" />
+        <item itemvalue="Python.mdo" />
+        <item itemvalue="Python.demo2" />
+        <item itemvalue="Python.study_n5" />
+        <item itemvalue="Python.demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20465362" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3287037" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.36689815" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3265306" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.23842593" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.36458334" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MARILib/tools/units.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/operations/pricing_and_costing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/operations/flight_mechanics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+          <folding>
+            <element signature="e#194#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/operations/handling_qualities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+          <folding>
+            <element signature="e#194#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/gems/modules/initialize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="e#116#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/gems/modules/airframe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
+          <folding>
+            <element signature="e#194#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/airframe/airframe_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+          <folding>
+            <element signature="e#194#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/gems/modules/propulsion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/jpo_n1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="50" column="98" selection-start-line="50" selection-start-column="98" selection-end-line="50" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/sequence_packaged.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#117#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/airplane/viewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="400" column="75" lean-forward="true" selection-start-line="400" selection-start-column="75" selection-end-line="400" selection-end-column="75" />
+          <folding>
+            <element signature="e#194#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#116#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_data/operational_performances.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6292">
+          <caret line="286" column="41" lean-forward="true" selection-start-line="286" selection-start-column="41" selection-end-line="286" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#115#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/operations/environmental_impact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/operations/mission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#195#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/airframe/airframe_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="237" column="46" lean-forward="true" selection-start-line="237" selection-start-column="46" selection-end-line="237" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/initialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="25" />
+          <folding>
+            <element signature="e#194#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/sequence_deployed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="150" column="51" lean-forward="true" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
+          <folding>
+            <element signature="e#117#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="e#201#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/test_cases/jpo_n2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-end-line="36" />
+          <folding>
+            <element signature="e#201#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/turboprop/turboprop_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/scipy/optimize/minpack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3080">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#192#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_data/physical_performances.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="71" column="94" selection-start-line="71" selection-start-column="94" selection-end-line="71" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/tools/text_io.py" />
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_data/aircraft_description.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+          <folding>
+            <element signature="e#116#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/propulsion_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#192#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/airplane/airplane_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+          <folding>
+            <element signature="e#194#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte1/hybrid_pte1_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="154" column="43" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/processes/design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="752" lean-forward="true" selection-start-line="752" selection-end-line="752" />
+          <folding>
+            <element signature="e#116#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/aircraft_model/airplane/aerodynamics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2530">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+          <folding>
+            <element signature="e#194#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/propulsion_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1604">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="e#192#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/turbofan/turbofan_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="60" column="51" lean-forward="true" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/airframe/airframe_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#194#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/earth/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3630">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/airplane/propulsion/hybrid_pte2/hybrid_pte2_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3080">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="e#192#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/project/Output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6754">
+          <caret line="307" column="46" selection-start-line="307" selection-start-column="46" selection-end-line="307" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n2/study_n6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#201#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n2/study_n5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#201#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#196#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#185#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#184#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/tutorial_n1/study_n1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#252#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/project/mdo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#201#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MARILib/works/project/mda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
