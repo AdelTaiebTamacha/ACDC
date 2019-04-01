@@ -23,7 +23,7 @@ aircraft = Aircraft()
 # Design drivers
 #------------------------------------------------------------------------------------------------------
 design_range = unit.m_NM(3000)
-cruise_mach = 0.78
+cruise_mach = 0.74
 n_pax_ref = 150
 
 propulsion_architecture = 3 # 1:turbofan, 2:partial turboelectric first model (TD2), 3:partial turboelectric second model (project)
@@ -40,9 +40,9 @@ study_name = "This airplane"
 
 # Input to be adjusted according to requirements
 #------------------------------------------------------------------------------------------------------
-aircraft.propulsion.fuel_type = 1       # 1:kerosene, 2:hydrogene
+aircraft.propulsion.fuel_type = 2       # 1:kerosene, 2:hydrogene
 
-aircraft.cabin.n_pax_front = 6
+aircraft.cabin.n_pax_front = 5
 aircraft.cabin.n_aisle = 1
 
 # Input to be optimised according to requirements and selected criterion
@@ -171,4 +171,4 @@ print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metr
 #------------------------------------------------------------------------------------------------------
 #show.draw_3d_view(aircraft,"study_n5",study_name)
 
-aircraft.export_to_ini_file("Output.txt")
+aircraft.export_to_ini_file("output_mda")
