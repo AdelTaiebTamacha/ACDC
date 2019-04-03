@@ -76,8 +76,8 @@ aircraft.battery.energy_density = unit.J_kWh(0.2)       # J/kg, # Battery energy
 aircraft.power_elec_chain.overall_efficiency = 0.90     # 0.90 from init.e_chain_efficiency()
 
 
-aircraft.economics.fuel_price = 2/unit.liter_usgal(1)   # 2 $/USgal
-aircraft.economics.elec_price = 0.15/unit.J_kWh(1)      # 0.05 $/kWh
+aircraft.economics.fuel_price = 0.98/unit.liter_usgal(1)   # 2 $/USgal
+aircraft.economics.elec_price = 0.1054/unit.J_kWh(1)      # 0.05 $/kWh
 
 
 # Design process
