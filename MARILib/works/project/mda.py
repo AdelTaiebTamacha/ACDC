@@ -171,4 +171,4 @@ print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metr
 #------------------------------------------------------------------------------------------------------
 #show.draw_3d_view(aircraft,"study_n5",study_name)
 
-aircraft.export_to_ini_file("output_mda")
+aircraft.export_to_ini_file("output_mda2")

@@ -30,12 +30,12 @@ def eval_cabin_design(aircraft):
     cabin.fwd_limit = 4.0                                                   # TO BE UPDATED
 
     # Statistical regression
-    cabin.width = 0.38*cabin.n_pax_front + 1.05*cabin.n_aisle + 0.15        # TO BE UPDATED
+    cabin.width = 3.65 #0.38*cabin.n_pax_front + 1.05*cabin.n_aisle + 0.15        # TO BE UPDATED
 
     # Statistical regression
-    cabin.length = 6.3*(cabin.width + 0.4) \
-                   + 0.005*(cabin.n_pax_ref/cabin.n_pax_front)**2.25 \
-                   - cabin.fwd_limit                                        # TO BE UPDATED
+    cabin.length = 32.17#6.3*(cabin.width + 0.4) \
+                   #+ 0.005*(cabin.n_pax_ref/cabin.n_pax_front)**2.25 \
+                   #- cabin.fwd_limit                                        # TO BE UPDATED
 
     # Factor 0.95 accounts for tappered parts
     cabin.floor_area = 0.95*cabin.length*cabin.width
@@ -77,7 +77,7 @@ def eval_fuselage_design(aircraft):
     # Fuselage walls are supposed 0.2m thick
     fuselage.width = cabin.width + 0.4                                          # TO BE UPDATED
 
-    fuselage.height = 1.25*(cabin.width - 0.15)                                 # TO BE UPDATED
+    fuselage.height = cabin.width + 0.4 #1.25*(cabin.width - 0.15)                                 # TO BE UPDATED
 
     fuselage.length = cabin.fwd_limit + cabin.length + 1.5*fuselage.width       # TO BE UPDATED
 
