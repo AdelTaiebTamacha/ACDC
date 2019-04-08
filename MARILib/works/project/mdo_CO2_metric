@@ -1,8 +1,8 @@
 [Aircraft]
     name = my_test_airplane
     [[aerodynamics]]
-        cruise_lod_max = 18.22645620748226
-        cz_cruise_lod_max = 0.6571876990968731
+        cruise_lod_max = 18.227223121998463
+        cz_cruise_lod_max = 0.6571646958852317
         cz_max_clean = 1.45
         cz_max_ld = 2.7815205850444835
         cz_max_to = 2.234456175513345
@@ -10,7 +10,7 @@
         hld_conf_ld = 1
         hld_conf_to = 0.3
     [[battery]]
-        c_g = 18.12972292030018
+        c_g = 18.122395495719793
         energy_cruise = 0.0
         energy_density = 720000.0
         mass = 0.0
@@ -19,14 +19,14 @@
         strategy = 1
         time_feed = 0.0
     [[body_nacelle]]
-        c_g = 18.12972292030018
+        c_g = 18.122395495719793
         hub_width = 0.5
         length = 4.0
         mass = 339.12620325422483
         net_wetted_area = 32.400000000000006
         width = 1.5
         x_axe = None
-        x_ext = 16.12972292030018
+        x_ext = 16.122395495719793
         y_axe = None
         y_ext = 7.343728040616309
         z_axe = None
@@ -44,22 +44,22 @@
         n_pax_ref = 150
         width = 3.65
     [[center_of_gravity]]
-        max_bwd_mass = 60867.1015555297
-        max_bwd_req_cg = 22.988651670869793
+        max_bwd_mass = 60860.58673077296
+        max_bwd_req_cg = 22.983954776433293
         max_bwd_stab_cg = None
-        max_fwd_mass = 58963.2473482546
-        max_fwd_req_cg = 20.782415858534346
+        max_fwd_mass = 58953.65998462488
+        max_fwd_req_cg = 20.777707778136474
         max_fwd_trim_cg = None
-        mwe = 22.220988305461436
-        owe = 22.130026235581155
+        mwe = 22.21428558959567
+        owe = 22.12394775783299
     [[cost_mission]]
-        block_CO2 = 2867.630925369561
-        block_fuel = 913.2582564871212
-        block_time = 5797.673882941191
+        block_CO2 = 2867.4410350928188
+        block_fuel = 913.1977818766939
+        block_time = 5797.671180339608
         disa = 0
         payload = 15000
         range = 926000
-        total_fuel = 1241.0635328349883
+        total_fuel = 1240.9538646652693
         tow = None
     [[design_driver]]
         cruise_mach = 0.74
@@ -67,16 +67,16 @@
         ref_cruise_altp = 10668.0
         top_of_climb_altp = 10668.0
     [[economics]]
-        airplane_price = 93757621.79558028
+        airplane_price = 93754240.12527338
         battery_price = 20
         cabin_crew_cost = None
-        cash_operating_cost = 9401.213729408917
+        cash_operating_cost = 12871.564256850144
         catering_cost = None
         cockpit_crew_cost = None
         depreciation = None
-        direct_operating_cost = 14521.922920471738
-        elec_price = 2.9277777777777777e-08
-        fuel_price = 0.25888954033950773
+        direct_operating_cost = 17992.088593007316
+        elec_price = 4.166666666666666e-08
+        fuel_price = 0.528346000692873
         gear_price = None
         insurance = None
         interest_rate = 0.04
@@ -163,7 +163,7 @@
         z_ext = 1.6199999999999997
     [[environmental_impact]]
         CO2_index = 3.14
-        CO2_metric = 0.0002017574869783394
+        CO2_metric = 0.00020173978433613772
         CO_index = 0.003
         H2O_index = 1.29
         HC_index = 0.0004
@@ -186,53 +186,53 @@
     [[high_speed]]
         cas1_ttc = 128.61111111111111
         cas2_ttc = 154.33333333333334
-        cruise_lod = 18.22645620748226
+        cruise_lod = 18.227223121998463
         cruise_sfc = 4.463174220216109e-06
         disa_climb = 15
-        eff_ttc = 1128.3095608804153
-        eff_vz_climb = 4.727386075737567
-        eff_vz_cruise = 2.663946306833026
+        eff_ttc = 1128.1032957407087
+        eff_vz_climb = 4.728873413819434
+        eff_vz_cruise = 2.6653325296705703
         req_toc_altp = 10668.0
         req_ttc = 1500
         req_vz_climb = 1.524
         req_vz_cruise = 0.0
     [[horizontal_tail]]
-        area = 39.285133847939555
+        area = 39.17278747271512
         aspect_ratio = 5
         attachment = 1
-        c_axe = 4.152650141535903
-        c_g = 36.86342126146041
-        c_tip = 1.4534275495375661
+        c_axe = 4.146708081923841
+        c_g = 36.8636373030105
+        c_tip = 1.4513478286733443
         dihedral = 0.08726646259971647
         lever_arm = 17.635452669504613
-        mac = 3.0196431276106757
-        mass = 864.2729446546703
-        net_wetted_area = 64.03476817214147
-        span = 14.015194227683674
+        mac = 3.015322296608818
+        mass = 861.8013243997327
+        net_wetted_area = 63.851643580525646
+        span = 13.995139776492968
         sweep = 0.4712664625997165
         t_o_c = 0.1
         taper_ratio = 0.35
         volume = 0.94
-        x_axe = 34.47738975920155
-        x_mac = 36.25949263593827
-        x_tip = 38.72298778907434
-        y_mac = 2.941460516921265
-        y_tip = 7.007597113841837
+        x_axe = 34.481019991916185
+        x_mac = 36.260572843688735
+        x_tip = 38.7205429623155
+        y_mac = 2.9372515580293883
+        y_tip = 6.997569888246484
         z_axe = 3.24
-        z_tip = 3.853085306018145
+        z_tip = 3.8522080374519345
     [[landing_gears]]
-        c_g = 20.37572491563103
-        mass = 2669.0225984799304
+        c_g = 20.359544558100808
+        mass = 2668.8890703202183
     [[low_speed]]
         altp_app_speed = 0.0
         altp_tofl = 0
         disa_app_speed = 0
         disa_oei = 15
         disa_tofl = 15
-        eff_app_speed = 68.38865094172743
+        eff_app_speed = 68.38697536711621
         eff_kvs1g = 1.13
-        eff_oei_path = 0.04192973928548647
-        eff_tofl = 1447.7660566386305
+        eff_oei_path = 0.04193673435692028
+        eff_tofl = 1447.642462604067
         kvs1g_app_speed = 1.23
         kvs1g_tofl = 1.13
         limitation = 1
@@ -241,7 +241,7 @@
         req_oei_altp = 4572.0
         req_oei_path = 0.011
         req_tofl = 2000
-        seg2_path = 0.057302804732681616
+        seg2_path = 0.057309538283998686
     [[max_fuel_mission]]
         block_fuel = None
         block_time = None
@@ -257,14 +257,14 @@
         total_fuel = None
         tow = None
     [[nominal_mission]]
-        block_fuel = 4389.504863113226
-        block_time = 28799.618878041358
+        block_fuel = 4389.131578004165
+        block_time = 28799.61587427496
         payload = 15000
-        range = 5556000.00000019
-        total_fuel = 4891.4411695596755
-        tow = 66873.05380553786
+        range = 5556000.000000187
+        total_fuel = 4891.0029579680395
+        tow = 66869.77696948097
     [[payload]]
-        cg_container_pallet = 19.556538035158667
+        cg_container_pallet = 19.550554823461958
         m_container_pallet = 745.9622100000001
         m_pax_max = 120
         m_pax_nominal = 100
@@ -275,7 +275,7 @@
         maximum = 18000
         nominal = 15000
     [[power_elec_chain]]
-        c_g = 20.12972292030018
+        c_g = 20.122395495719793
         cooling_pw_density = 10000.0
         fid = 0.01
         generator_pw_density = 5000.0
@@ -294,7 +294,7 @@
         bli_e_thrust_factor = 1.2266152656587856
         bli_effect = 1
         bli_thrust_factor = 1.0127087956182301
-        c_g = 24.07975495595052
+        c_g = 24.07276951487475
         fid_thrust_ref = 4412.137934236034
         fuel_type = 2
         mass = 9641.813177283126
@@ -307,21 +307,21 @@
         sec_cruise_ref = 217.1349761387649
         sfc_cruise_ref = 4.463174220216109e-06
     [[systems]]
-        c_g = 22.769002561511048
-        mass = 3950.003014748579
+        c_g = 22.764581473793495
+        mass = 3949.8481712055673
     [[tanks]]
         body_volume = 0.0
-        cantilever_volume = 18.13101438013415
-        central_volume = 16.666215970048114
+        cantilever_volume = 18.07916388236991
+        central_volume = 16.571029239942934
         fuel_body_cg = 0.0
-        fuel_cantilever_cg = 19.765923505809504
-        fuel_central_cg = 17.680427225003626
+        fuel_cantilever_cg = 19.75454818715294
+        fuel_central_cg = 17.672674735747016
         fuel_density = 70.9
-        fuel_max_bwd_cg = 19.765923505809504
-        fuel_max_bwd_mass = 1285.4889195515113
-        fuel_max_fwd_cg = 17.680427225003626
-        fuel_max_fwd_mass = 1181.6347122764114
-        mfw_volume_limited = 2467.1236318279225
+        fuel_max_bwd_cg = 19.75454818715294
+        fuel_max_bwd_mass = 1281.8127192600268
+        fuel_max_fwd_cg = 17.672674735747016
+        fuel_max_fwd_mass = 1174.8859731119542
+        mfw_volume_limited = 2456.6986923719805
     [[turbofan_engine]]
         bpr = 9
         core_thrust_ratio = 0.13
@@ -330,7 +330,7 @@
         kfn_off_take = 0.9611295317402563
         n_engine = 2
         rating_factor = 1.162, 1.015, 0.66, 0.582, 0.1
-        reference_thrust = 120000
+        reference_thrust = 120000.0
     [[turbofan_nacelle]]
         attachment = 1
         bnd_layer = '''[[1.00000000e-03 2.99152086e-03]
@@ -359,7 +359,7 @@
  [1.43754167e+00 2.04706767e+00]
  [0.00000000e+00 0.00000000e+00]]'''
         body_length = 4.0
-        c_g = 23.12719332588105
+        c_g = 23.119865901300667
         efficiency_fan = 0.95
         efficiency_prop = 0.82
         fan_width = 2.2990073056674003
@@ -370,14 +370,14 @@
         nozzle_area = 2.407961023593386
         nozzle_width = 1.7509743565855154
         width = 2.735818693744206
-        x_ext = 20.12972292030018
+        x_ext = 20.122395495719793
         x_int = None
         y_ext = 7.343728040616309
         y_int = None
         z_ext = -2.9275809389407255
         z_int = None
     [[turbofan_pylon]]
-        c_g = 24.725898325790446
+        c_g = 24.718570901210057
         mass = 744.0
     [[turboprop_engine]]
         n_engine = None
@@ -421,44 +421,44 @@
         z_root = 4.05
         z_tip = 9.764643633070676
     [[weights]]
-        mfw = 2467.1236318279225
-        mlw = 66873.05380553786
-        mtow = 66873.05380553786
-        mwe = 41901.97042597819
-        mzfw = 64981.612635978185
-        owe = 46981.612635978185
+        mfw = 2456.6986923719805
+        mlw = 66869.77696948097
+        mtow = 66869.77696948097
+        mwe = 41899.13180151293
+        mzfw = 64978.77401151293
+        owe = 46978.77401151293
     [[wing]]
-        area = 155
+        area = 155.00000001490116
         aspect_ratio = 9
         attachment = 1
-        c_g = 20.207602524351078
-        c_kink = 4.5827045829963815
-        c_root = 6.738244226568504
-        c_tip = 1.6771714685394141
+        c_g = 20.19702597467881
+        c_kink = 4.566778537458692
+        c_root = 6.717174555884482
+        c_tip = 1.7144966862032456
         dihedral = 0.08726646259971647
         hld_type = 9
-        mac = 4.75505228957098
-        mass = 11076.938615112784
+        mac = 4.741453941943835
+        mass = 11076.859982605187
         morphing = 1
-        net_wetted_area = 254.2
-        setting = 0.024988297262677685
-        span = 37.3496987939662
+        net_wetted_area = 254.20000002443788
+        setting = 0.016477307774834603
+        span = 37.34969879576153
         sweep = 0.384
         t_o_c_k = 0.11
         t_o_c_r = 0.14
         t_o_c_t = 0.1
-        taper_ratio = 0.24890333626175568
-        x_kink = 17.814493600605196
-        x_mac = 18.190187675943584
-        x_root = 15.658953957033075
-        x_tip = 23.39349703180372
+        taper_ratio = 0.25524075218520054
+        x_kink = 17.80791838740746
+        x_mac = 18.19358726285037
+        x_root = 15.657522368981672
+        x_tip = 23.373609003168312
         y_kink = 6.665146171241888
-        y_mac = 7.295623565002528
+        y_mac = 7.319639165721095
         y_root = 2.025
-        y_tip = 18.6748493969831
+        y_tip = 18.674849397880767
         z_kink = 0.4059601870868861
         z_root = 0
-        z_tip = 1.4566730716499632
+        z_tip = 1.456673071728499
     [[zero_payload_mission]]
         block_fuel = None
         block_time = None

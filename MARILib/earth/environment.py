@@ -186,7 +186,7 @@ def fuel_density(fuel_type):
     if (fuel_type==1):
         fuel_density = 803. # Kerosene : between 775-840 kg/m3
     elif (fuel_type==2):
-        fuel_density = 70.8 # Hydrogene : TO BE UPDATED
+        fuel_density = 70.9 # Hydrogene : TO BE UPDATED
     else:
         raise Exception("fuel_type index is out of range")
     return fuel_density

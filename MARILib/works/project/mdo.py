@@ -91,7 +91,7 @@ area_bnd = (100,200)                # TO BE UPDATED (so that bound constraints a
 search_domain = (thrust_bnd,area_bnd)
 
 # Criterion to be chosen among  "MTOW", "cost_fuel", "CO2_metric", "COC", "DOC"
-criterion = "MTOW"
+criterion = "DOC"
 
 run.optimization(aircraft,search_domain,criterion)
 
@@ -170,4 +170,4 @@ print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metr
 #------------------------------------------------------------------------------------------------------
 #show.draw_3d_view(aircraft,"study_n5",study_name)
 
-aircraft.export_to_ini_file("output_mdo")
+aircraft.export_to_ini_file("mdo_DOC")
