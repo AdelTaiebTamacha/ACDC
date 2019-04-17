@@ -91,7 +91,7 @@ area_bnd = (100,200)                # TO BE UPDATED (so that bound constraints a
 search_domain = (thrust_bnd,area_bnd)
 
 # Criterion to be chosen among  "MTOW", "cost_fuel", "CO2_metric", "COC", "DOC"
-criterion = "DOC"
+criterion = "CO2_metric"
 
 run.optimization(aircraft,search_domain,criterion)
 
@@ -103,21 +103,21 @@ run.optimization(aircraft,search_domain,criterion)
 #------------------------------------------------------------------------------------------------------
 
 print("--------------------------------------------------------------")
-print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
+#print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
 print("Wing area = ","%.1f"%aircraft.wing.area," m2")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
 print("OWE = ","%.0f"%aircraft.weights.owe," kg")
 
 print("")
-print("LoD cruise = ","%.2f"%(aircraft.aerodynamics.cruise_lod_max)," no_dim")
-print("SFC cruise = ","%.3f"%(aircraft.propulsion.sfc_cruise_ref*36000)," kg/daN/h")
-print("SEC cruise = ","%.3f"%(aircraft.propulsion.sec_cruise_ref/100)," kW/daN")
+#print("LoD cruise = ","%.2f"%(aircraft.aerodynamics.cruise_lod_max)," no_dim")
+#print("SFC cruise = ","%.3f"%(aircraft.propulsion.sfc_cruise_ref*36000)," kg/daN/h")
+#print("SEC cruise = ","%.3f"%(aircraft.propulsion.sec_cruise_ref/100)," kW/daN")
 
-print("")
-print("MTO refernce thrust = ","%.1f"%(aircraft.propulsion.mto_thrust_ref/10)," daN")
-print("MCN refernce thrust = ","%.1f"%(aircraft.propulsion.mcn_thrust_ref/10)," daN")
-print("MCL refernce thrust = ","%.1f"%(aircraft.propulsion.mcl_thrust_ref/10)," daN")
-print("MCR refernce thrust = ","%.1f"%(aircraft.propulsion.mcr_thrust_ref/10)," daN")
+#print("")
+#print("MTO refernce thrust = ","%.1f"%(aircraft.propulsion.mto_thrust_ref/10)," daN")
+#print("MCN refernce thrust = ","%.1f"%(aircraft.propulsion.mcn_thrust_ref/10)," daN")
+#print("MCL refernce thrust = ","%.1f"%(aircraft.propulsion.mcl_thrust_ref/10)," daN")
+#print("MCR refernce thrust = ","%.1f"%(aircraft.propulsion.mcr_thrust_ref/10)," daN")
 
 print("")
 if (aircraft.propulsion.bli_thrust_factor!=None): print("Fan BLI thrust factor = ","%.4f"%aircraft.propulsion.bli_thrust_factor," no_dim")
@@ -134,6 +134,7 @@ if (aircraft.electric_nacelle.length!=None): print("Electric nacelle length = ",
 if (aircraft.electric_nacelle.mass!=None): print("Electric nacelle mass = ","%.1f"%aircraft.electric_nacelle.mass," kg")
 if (aircraft.power_elec_chain.mass!=None): print("Power electric mass = ","%.1f"%aircraft.power_elec_chain.mass," kg")
 if (aircraft.battery.mass!=None): print("Battery mass = ","%.1f"%aircraft.battery.mass," kg")
+
 
 print("")
 print("--------------------------------------------------------------")
@@ -164,10 +165,12 @@ print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
 print("Cost mission fuel = ","%.1f"%aircraft.cost_mission.block_fuel," kg")
 print("Cash Operating Cost = ","%.1f"%aircraft.economics.cash_operating_cost," $/trip")
 print("Carbon dioxid emission = ","%.1f"%(aircraft.cost_mission.block_CO2)," kg/trip")
+print("Direct Operation cost", "%.1f"%aircraft.economics.direct_operating_cost, "$/aircraft")
 print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
+
 
 # airplane 3D view
 #------------------------------------------------------------------------------------------------------
 #show.draw_3d_view(aircraft,"study_n5",study_name)
 
-aircraft.export_to_ini_file("mdo_DOC")
+#aircraft.export_to_ini_file("mdo_DOC")
