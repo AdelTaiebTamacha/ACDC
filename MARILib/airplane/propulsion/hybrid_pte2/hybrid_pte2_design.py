@@ -331,8 +331,8 @@ def eval_body_tank_data(aircraft):
     tanks.mfw_volume_limited = tanks.body_volume*tanks.fuel_density
 
     # TO BE UPDATED (TO BE DELETED WHEN ABOVE CODE IS UPDATED)
-    tanks.cantilever_volume = 0.2 * (wing.area*wing.mac*(0.5*wing.t_o_c_r + 0.3*wing.t_o_c_k + 0.2*wing.t_o_c_t))
-    tanks.central_volume = 1.3 * fuselage.width * wing.t_o_c_r * wing.mac**2
+    tanks.cantilever_volume = 0# 0.2 * (wing.area*wing.mac*(0.5*wing.t_o_c_r + 0.3*wing.t_o_c_k + 0.2*wing.t_o_c_t))
+    tanks.central_volume = 0 #1.3 * fuselage.width * wing.t_o_c_r * wing.mac**2
     # tanks.mfw_volume_limited = (tanks.central_volume + tanks.cantilever_volume)*tanks.fuel_density
     tanks.fuel_cantilever_cg =  0.25*(wing.x_root + 0.40*wing.c_root) \
                               + 0.65*(wing.x_kink + 0.40*wing.c_kink) \

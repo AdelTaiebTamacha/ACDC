@@ -53,8 +53,8 @@ aircraft.turbofan_engine.reference_thrust = 153624  # Newtons
 aircraft.wing.area = 209.7                           # m2
 
 
-aircraft.body_nacelle.width = 3       # m
-aircraft.body_nacelle.length = 12       # m
+aircraft.body_nacelle.width = 2.5       # m
+aircraft.body_nacelle.length = 8       # m
 
 
 e_power = 1.0e6       # Watts, electric motor power
@@ -75,7 +75,7 @@ aircraft.battery.mass = 0.              # kg, # Battery mass, input when battery
 #------------------------------------------------------------------------------------------------------
 aircraft.propulsion.bli_effect = 1                      # boundary layer effect, 0:inactive, 1:active
 aircraft.battery.energy_density = unit.J_kWh(0.2)       # J/kg, # Battery energy density
-aircraft.power_elec_chain.overall_efficiency = 0.90     # 0.90 from init.e_chain_efficiency()
+aircraft.power_elec_chain.overall_efficiency = 0.2     # 0.90 from init.e_chain_efficiency()81785
 
 
 aircraft.economics.fuel_price = 2/unit.liter_usgal(1)   # 2 $/USgal
@@ -97,7 +97,7 @@ criterion = "MTOW"
 
 run.optimization(aircraft,search_domain,criterion)
 
-"""
+# """
 # Result printing
 #======================================================================================================
 
@@ -105,7 +105,7 @@ run.optimization(aircraft,search_domain,criterion)
 #------------------------------------------------------------------------------------------------------
 
 print("--------------------------------------------------------------")
-#print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
+print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
 print("Wing area = ","%.1f"%aircraft.wing.area," m2")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
 print("OWE = ","%.0f"%aircraft.weights.owe," kg")
@@ -136,11 +136,8 @@ if (aircraft.electric_nacelle.length!=None): print("Electric nacelle length = ",
 if (aircraft.electric_nacelle.mass!=None): print("Electric nacelle mass = ","%.1f"%aircraft.electric_nacelle.mass," kg")
 if (aircraft.power_elec_chain.mass!=None): print("Power electric mass = ","%.1f"%aircraft.power_elec_chain.mass," kg")
 if (aircraft.battery.mass!=None): print("Battery mass = ","%.1f"%aircraft.battery.mass," kg")
-"""
+# """
 
-
-print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
-print("Wing area = ","%.1f"%aircraft.wing.area," m2")
 
 print("")
 print("--------------------------------------------------------------")
