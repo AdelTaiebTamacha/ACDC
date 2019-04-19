@@ -47,12 +47,14 @@ aircraft.cabin.n_aisle = 1
 
 # Input to be optimised according to requirements and selected criterion
 #------------------------------------------------------------------------------------------------------
-aircraft.turbofan_engine.reference_thrust = 120000  # Newtons
-aircraft.wing.area = 155                            # m2
+aircraft.turbofan_engine.reference_thrust = 153624  # Newtons
+aircraft.wing.area = 209.7                           # m2
 
 
+rapport_a340_600 = 75.2/5.64
 aircraft.body_nacelle.width = 1.5       # m
-aircraft.body_nacelle.length = 4.       # m
+aircraft.body_nacelle.length = aircraft.body_nacelle.width*rapport_a340_600       # m
+
 
 
 e_power = 1.0e6       # Watts, electric motor power
@@ -76,7 +78,7 @@ aircraft.battery.energy_density = unit.J_kWh(0.2)       # J/kg, # Battery energy
 aircraft.power_elec_chain.overall_efficiency = 0.90     # 0.90 from init.e_chain_efficiency()
 
 
-aircraft.economics.fuel_price = 0.98/unit.liter_usgal(1)   # 2 $/USgal
+aircraft.economics.fuel_price = 1.708/unit.liter_usgal(1)   # 2 $/USgal
 aircraft.economics.elec_price = 0.1054/unit.J_kWh(1)      # 0.05 $/kWh
 
 
@@ -102,7 +104,7 @@ run.performance_analysis(aircraft)
 
 # Print relevant output  TO BE UPDATED  (according to study needs)
 #------------------------------------------------------------------------------------------------------
-
+"""
 print("--------------------------------------------------------------")
 print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
 print("Wing area = ","%.1f"%aircraft.wing.area," m2")
@@ -135,11 +137,30 @@ if (aircraft.electric_nacelle.length!=None): print("Electric nacelle length = ",
 if (aircraft.electric_nacelle.mass!=None): print("Electric nacelle mass = ","%.1f"%aircraft.electric_nacelle.mass," kg")
 if (aircraft.power_elec_chain.mass!=None): print("Power electric mass = ","%.1f"%aircraft.power_elec_chain.mass," kg")
 if (aircraft.battery.mass!=None): print("Battery mass = ","%.1f"%aircraft.battery.mass," kg")
+"""
 
+"""
 print("")
 print("--------------------------------------------------------------")
 print("Nominal mission fuel = ","%.1f"%(aircraft.nominal_mission.block_fuel)," kg")
 print("Maximum fuel weight = ","%.1f"%(aircraft.weights.mfw)," kg")
+print("")
+print("Take off field length required = ","%.1f"%aircraft.low_speed.req_tofl," m | effective = ","%.1f"%aircraft.low_speed.eff_tofl," m | difference ","%.1f"%(aircraft.low_speed.req_tofl-aircraft.low_speed.eff_tofl))
+print("")
+print("Approach speed required = ","%.1f"%unit.kt_mps(aircraft.low_speed.req_app_speed)," kt | effective = ","%.1f"%unit.kt_mps(aircraft.low_speed.eff_app_speed)," kt")
+print("")
+print("Flight path required OEI = ","%.2f"%(aircraft.low_speed.req_oei_path*100)," % | effective = ","%.2f"%(aircraft.low_speed.eff_oei_path*100)," %")
+print("")
+print("Vertical speed required with MCL rating = ","%.1f"%unit.ftpmin_mps(aircraft.high_speed.req_vz_climb)," ft/min | effective = ","%.1f"%unit.ftpmin_mps(aircraft.high_speed.eff_vz_climb)," ft/min")
+print("")
+print("Vertical speed required with MCR rating = ","%.1f"%unit.ftpmin_mps(aircraft.high_speed.req_vz_cruise)," ft/min effective = ","%.1f"%unit.ftpmin_mps(aircraft.high_speed.eff_vz_cruise)," ft/min")
+print("")
+print("Time to climb required = ","%.1f"%unit.min_s(aircraft.high_speed.req_ttc)," min effective = ","%.1f"%unit.min_s(aircraft.high_speed.eff_ttc)," min")
+"""
+
+print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
+print("Wing area = ","%.1f"%aircraft.wing.area," m2")
+
 print("")
 print("Take off field length required = ","%.1f"%aircraft.low_speed.req_tofl," m")
 print("Take off field length effective = ","%.1f"%aircraft.low_speed.eff_tofl," m")
@@ -147,6 +168,7 @@ print("")
 print("Approach speed required = ","%.1f"%unit.kt_mps(aircraft.low_speed.req_app_speed)," kt")
 print("Approach speed effective = ","%.1f"%unit.kt_mps(aircraft.low_speed.eff_app_speed)," kt")
 print("")
+#"""
 print("Flight path required OEI = ","%.2f"%(aircraft.low_speed.req_oei_path*100)," %")
 print("light path effective OEI = ","%.2f"%(aircraft.low_speed.eff_oei_path*100)," %")
 print("")
@@ -158,7 +180,9 @@ print("Vertical speed effective with MCR rating = ","%.1f"%unit.ftpmin_mps(aircr
 print("")
 print("Time to climb required = ","%.1f"%unit.min_s(aircraft.high_speed.req_ttc)," min")
 print("Time to climb effective = ","%.1f"%unit.min_s(aircraft.high_speed.eff_ttc)," min")
+# """
 
+"""
 print("")
 print("--------------------------------------------------------------")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
@@ -169,6 +193,33 @@ print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metr
 
 # airplane 3D view
 #------------------------------------------------------------------------------------------------------
-#show.draw_3d_view(aircraft,"study_n5",study_name)
+show.draw_3d_view(aircraft,"study_n5",study_name)
 
-aircraft.export_to_ini_file("output_mda2")
+#aircraft.export_to_ini_file("output_mda3")
+# """
+
+
+
+"""
+# Input to be optimised according to requirements and selected criterion
+#------------------------------------------------------------------------------------------------------
+aircraft.turbofan_engine.reference_thrust = 120000  # Newtons
+aircraft.wing.area = \
+wing_area_approch = 120000, 163                          # m2
+
+
+for i in range(10000, 115000, 1000):
+#for i in range(160, 200, 1):
+    aircraft.turbofan_engine.reference_thrust = i  # Newtons
+    aircraft.wing.area = 125
+
+    run.aircraft_pre_design(aircraft)
+    run.mass_mission_adaptation(aircraft)
+    run.performance_analysis(aircraft)
+
+    print("Thrust :", "%.1f"%aircraft.turbofan_engine.reference_thrust)
+    print("Wing a :", "%.1f"%aircraft.wing.area)
+    print("Take off field length required = ", "%.1f" % aircraft.low_speed.req_tofl, " m | effective = ",
+          "%.1f" % aircraft.low_speed.eff_tofl, " m | difference ",
+          "%.1f" % (aircraft.low_speed.req_tofl - aircraft.low_speed.eff_tofl))
+"""

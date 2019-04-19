@@ -53,7 +53,7 @@ def airframe_price(aircraft):
 
 
 #===========================================================================================================
-def operating_costs(aircraft,block_fuel,block_time):
+def operating_costs(aircraft, block_fuel,block_time):
     """
     Computes Cash and Direct Operating Costs per flight (based on AAE 451 Spring 2004)
     """

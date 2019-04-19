@@ -47,12 +47,14 @@ aircraft.cabin.n_aisle = 1
 
 # Input to be optimised according to requirements and selected criterion
 #------------------------------------------------------------------------------------------------------
-aircraft.turbofan_engine.reference_thrust = 120000  # Newtons
-aircraft.wing.area = 155                            # m2
+aircraft.turbofan_engine.reference_thrust = 150000  # Newtons
+aircraft.wing.area = 155                           # m2
+aircraft.turbofan_engine.reference_thrust = 153624  # Newtons
+aircraft.wing.area = 209.7                           # m2
 
 
-aircraft.body_nacelle.width = 1.5       # m
-aircraft.body_nacelle.length = 4.       # m
+aircraft.body_nacelle.width = 3       # m
+aircraft.body_nacelle.length = 12       # m
 
 
 e_power = 1.0e6       # Watts, electric motor power
@@ -85,17 +87,17 @@ aircraft.economics.elec_price = 0.15/unit.J_kWh(1)      # 0.05 $/kWh
 
 # Automatic optimization of the airplane
 #------------------------------------------------------------------------------------------------------
-thrust_bnd = (110000,150000)        # TO BE UPDATED (so that bound constraints are not active)
-area_bnd = (100,200)                # TO BE UPDATED (so that bound constraints are not active)
+thrust_bnd = (110000,200000)        # TO BE UPDATED (so that bound constraints are not active)
+area_bnd = (100,250)                # TO BE UPDATED (so that bound constraints are not active)
 
 search_domain = (thrust_bnd,area_bnd)
 
 # Criterion to be chosen among  "MTOW", "cost_fuel", "CO2_metric", "COC", "DOC"
-criterion = "CO2_metric"
+criterion = "MTOW"
 
 run.optimization(aircraft,search_domain,criterion)
 
-
+"""
 # Result printing
 #======================================================================================================
 
@@ -134,7 +136,11 @@ if (aircraft.electric_nacelle.length!=None): print("Electric nacelle length = ",
 if (aircraft.electric_nacelle.mass!=None): print("Electric nacelle mass = ","%.1f"%aircraft.electric_nacelle.mass," kg")
 if (aircraft.power_elec_chain.mass!=None): print("Power electric mass = ","%.1f"%aircraft.power_elec_chain.mass," kg")
 if (aircraft.battery.mass!=None): print("Battery mass = ","%.1f"%aircraft.battery.mass," kg")
+"""
 
+
+print("Engine effective reference thrust = ","%.1f"%(aircraft.propulsion.reference_thrust_effective/10)," daN")
+print("Wing area = ","%.1f"%aircraft.wing.area," m2")
 
 print("")
 print("--------------------------------------------------------------")
@@ -159,6 +165,9 @@ print("")
 print("Time to climb required = ","%.1f"%unit.min_s(aircraft.high_speed.req_ttc)," min")
 print("Time to climb effective = ","%.1f"%unit.min_s(aircraft.high_speed.eff_ttc)," min")
 
+
+
+"""
 print("")
 print("--------------------------------------------------------------")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
@@ -166,11 +175,35 @@ print("Cost mission fuel = ","%.1f"%aircraft.cost_mission.block_fuel," kg")
 print("Cash Operating Cost = ","%.1f"%aircraft.economics.cash_operating_cost," $/trip")
 print("Carbon dioxid emission = ","%.1f"%(aircraft.cost_mission.block_CO2)," kg/trip")
 print("Direct Operation cost", "%.1f"%aircraft.economics.direct_operating_cost, "$/aircraft")
-print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
+print("CO2 metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
+
+
+
+print("nominal :","%.2f"%aircraft.nominal_mission.block_fuel)
+print("time : %.2f"%aircraft.nominal_mission.block_time)
+print("total  fuel: %.2f"%aircraft.nominal_mission.total_fuel)
+
+
+print("mfw : %.2f"%aircraft.weights.mfw)
+"""
+
+"""
+print("t : %.2f"%aircraft.max_payload_mission.block_time)
+print("toal : %.2f"%aircraft.max_payload_mission.total_fuel)
+
+"""
+
+
+
+
+
+
+
+
 
 
 # airplane 3D view
 #------------------------------------------------------------------------------------------------------
-#show.draw_3d_view(aircraft,"study_n5",study_name)
+# show.draw_3d_view(aircraft,"study_n5",study_name)
 
 #aircraft.export_to_ini_file("mdo_DOC")

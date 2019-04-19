@@ -175,7 +175,11 @@ def eval_hybrid_body_nacelle_mass_old(aircraft):
 
     structure_mass = 5.0*kbody**1.2      # WARNING: ONE BODY MASS
 
-    tank_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATED
+    #tank_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATE
+    epaisseur = 0.003
+    tank_mass = 8000*math.pi*aircraft.body_nacelle.length*((aircraft.body_nacelle.width/2+epaisseur)**2 - (aircraft.body_nacelle.width/2)**2) + epaisseur*2*math.pi*(aircraft.body_nacelle.width/2)**2
+    #https://www.usinenouvelle.com/article/le-reservoir-s-adapte-a-l-hydrogene-liquide.N44875
+
 
     power_elec_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATED
 
@@ -247,7 +251,11 @@ def eval_hybrid_body_nacelle_mass(aircraft):
 
     structure_mass = 5.0*kbody**1.2      # WARNING: ONE BODY MASS
 
-    tank_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATED
+    #tank_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATE
+    epaisseur = 0.003
+    tank_mass = 8000*math.pi*aircraft.body_nacelle.length*((aircraft.body_nacelle.width/2+epaisseur)**2 - (aircraft.body_nacelle.width/2)**2) + epaisseur*2*math.pi*(aircraft.body_nacelle.width/2)**2
+    #https://www.usinenouvelle.com/article/le-reservoir-s-adapte-a-l-hydrogene-liquide.N44875
+
 
     body.mass = (structure_mass + tank_mass)*engine.n_engine        # Betteries (if any) are accounted separetly (see aircraft.battery)
 
@@ -311,7 +319,10 @@ def eval_body_tank_data(aircraft):
 
     tanks = aircraft.tanks
 
-    tanks.body_volume = 0.      # TO BE UPDATED
+    nacelle_width = aircraft.body_nacelle.width
+    nacelle_length = aircraft.body_nacelle.length
+
+    tanks.body_volume = nacelle_length*2*math.pi*(nacelle_width/2)**2     # TO BE UPDATE
 
     tanks.fuel_body_cg = 0.      # TO BE UPDATED
 
@@ -322,7 +333,7 @@ def eval_body_tank_data(aircraft):
     # TO BE UPDATED (TO BE DELETED WHEN ABOVE CODE IS UPDATED)
     tanks.cantilever_volume = 0.2 * (wing.area*wing.mac*(0.5*wing.t_o_c_r + 0.3*wing.t_o_c_k + 0.2*wing.t_o_c_t))
     tanks.central_volume = 1.3 * fuselage.width * wing.t_o_c_r * wing.mac**2
-    tanks.mfw_volume_limited = (tanks.central_volume + tanks.cantilever_volume)*tanks.fuel_density
+    # tanks.mfw_volume_limited = (tanks.central_volume + tanks.cantilever_volume)*tanks.fuel_density
     tanks.fuel_cantilever_cg =  0.25*(wing.x_root + 0.40*wing.c_root) \
                               + 0.65*(wing.x_kink + 0.40*wing.c_kink) \
                               + 0.10*(wing.x_tip + 0.40*wing.c_tip)
@@ -349,7 +360,7 @@ def eval_body_battery_cg(aircraft):
 
     battery = aircraft.battery
 
-    battery.c_g = body.c_g      # TO BE UPDATED
+    battery.c_g = body.c_g      # TO BE UPDATE
 
     return
 
