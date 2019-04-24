@@ -182,7 +182,7 @@ print("Time to climb required = ","%.1f"%unit.min_s(aircraft.high_speed.req_ttc)
 print("Time to climb effective = ","%.1f"%unit.min_s(aircraft.high_speed.eff_ttc)," min")
 # """
 
-"""
+
 print("")
 print("--------------------------------------------------------------")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
@@ -190,7 +190,7 @@ print("Cost mission fuel = ","%.1f"%aircraft.cost_mission.block_fuel," kg")
 print("Cash Operating Cost = ","%.1f"%aircraft.economics.cash_operating_cost," $/trip")
 print("Carbon dioxid emission = ","%.1f"%(aircraft.cost_mission.block_CO2)," kg/trip")
 print("Fuel efficiency metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
-
+"""
 # airplane 3D view
 #------------------------------------------------------------------------------------------------------
 show.draw_3d_view(aircraft,"study_n5",study_name)
