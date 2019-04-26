@@ -252,7 +252,7 @@ def eval_hybrid_body_nacelle_mass(aircraft):
     structure_mass = 5.0*kbody**1.2      # WARNING: ONE BODY MASS
 
     #tank_mass = 0   # WARNING: ONE BODY MASS, TO BE UPDATE
-    epaisseur = 0.003
+    epaisseur = 0.150
     tank_mass = 8000*math.pi*aircraft.body_nacelle.length*((aircraft.body_nacelle.width/2+epaisseur)**2 - (aircraft.body_nacelle.width/2)**2) + epaisseur*2*math.pi*(aircraft.body_nacelle.width/2)**2
     #https://www.usinenouvelle.com/article/le-reservoir-s-adapte-a-l-hydrogene-liquide.N44875
 

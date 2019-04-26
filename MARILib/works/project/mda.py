@@ -204,16 +204,36 @@ show.draw_3d_view(aircraft,"study_n5",study_name)
 
 e_power = 1.0e6
 
-for i in range(10000, 115000, 1000):
+for i in range(0, 4, 1):
+    # 100k/200k
 #for i in range(160, 200, 1):
-    e_power = (1.0+i)*10e6
+    # e_power = 100000+i
+    aircraft.power_elec_chain.overall_efficiency = 0.60+i/10
 
     run.aircraft_pre_design(aircraft)
     run.mass_mission_adaptation(aircraft)
     run.performance_analysis(aircraft)
 
+    print("efficiency:", "%.1f"%aircraft.power_elec_chain.overall_efficiency)
     print("Thrust :", "%.1f"%aircraft.turbofan_engine.reference_thrust)
     print("Wing a :", "%.1f"%aircraft.wing.area)
-    print("Take off field length required = ", "%.1f" % aircraft.low_speed.req_tofl, " m | effective = ",
-          "%.1f" % aircraft.low_speed.eff_tofl, " m | difference ",
-          "%.1f" % (aircraft.low_speed.req_tofl - aircraft.low_speed.eff_tofl))
+    print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
+    print("Cost mission fuel = ","%.1f"%aircraft.cost_mission.block_fuel," kg")
+    print("Cash Operating Cost = ","%.1f"%aircraft.economics.cash_operating_cost," $/trip")
+    print("Carbon dioxid emission = ","%.1f"%(aircraft.cost_mission.block_CO2)," kg/trip")
+    print("Direct Operation cost", "%.1f"%aircraft.economics.direct_operating_cost, "$/trip")
+    print("CO2 metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
+
+
+
+    print("nominal :","%.2f"%aircraft.nominal_mission.block_fuel)
+    print("time : %.2f"%aircraft.nominal_mission.block_time)
+    print("total  fuel: %.2f"%aircraft.nominal_mission.total_fuel)
+
+
+    print("mfw : %.2f"%aircraft.weights.mfw)
+    print("payload: ","%.2f"%aircraft.nominal_mission.payload)
+    print("Nominal mission fuel = ","%.1f"%(aircraft.nominal_mission.block_fuel)," kg")
+    print("Maximum fuel weight = ","%.1f"%(aircraft.weights.mfw)," kg")
+
+    print("--------------------------------------------------------------")
