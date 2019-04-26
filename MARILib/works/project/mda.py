@@ -54,10 +54,13 @@ aircraft.wing.area = 209.7                           # m2
 rapport_a340_600 = 75.2/5.64
 aircraft.body_nacelle.width = 1.5       # m
 aircraft.body_nacelle.length = aircraft.body_nacelle.width*rapport_a340_600       # m
+a320_ratio = 37.57/3.95
+aircraft.body_nacelle.width = 2       # m
+aircraft.body_nacelle.length = aircraft.body_nacelle.width * a320_ratio       # m
 
 
 
-e_power = 1.0e6       # Watts, electric motor power
+e_power = 5.0e6       # Watts, electric motor power
 
 aircraft.power_elec_chain.mto = e_power     # required power during take off
 aircraft.power_elec_chain.mcn = e_power     # required power in case of engine failure
@@ -199,19 +202,11 @@ show.draw_3d_view(aircraft,"study_n5",study_name)
 # """
 
 
-
-"""
-# Input to be optimised according to requirements and selected criterion
-#------------------------------------------------------------------------------------------------------
-aircraft.turbofan_engine.reference_thrust = 120000  # Newtons
-aircraft.wing.area = \
-wing_area_approch = 120000, 163                          # m2
-
+e_power = 1.0e6
 
 for i in range(10000, 115000, 1000):
 #for i in range(160, 200, 1):
-    aircraft.turbofan_engine.reference_thrust = i  # Newtons
-    aircraft.wing.area = 125
+    e_power = (1.0+i)*10e6
 
     run.aircraft_pre_design(aircraft)
     run.mass_mission_adaptation(aircraft)
@@ -222,4 +217,3 @@ for i in range(10000, 115000, 1000):
     print("Take off field length required = ", "%.1f" % aircraft.low_speed.req_tofl, " m | effective = ",
           "%.1f" % aircraft.low_speed.eff_tofl, " m | difference ",
           "%.1f" % (aircraft.low_speed.req_tofl - aircraft.low_speed.eff_tofl))
-"""

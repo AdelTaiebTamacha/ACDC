@@ -53,8 +53,11 @@ aircraft.turbofan_engine.reference_thrust = 153624  # Newtons
 aircraft.wing.area = 209.7                           # m2
 
 
-aircraft.body_nacelle.width = 2.5       # m
+aircraft.body_nacelle.width = 3       # m
 aircraft.body_nacelle.length = 8       # m
+a320_ratio = 37.57/3.95
+aircraft.body_nacelle.width = 2       # m
+aircraft.body_nacelle.length = aircraft.body_nacelle.width * a320_ratio       # m
 
 
 e_power = 1.0e6       # Watts, electric motor power
@@ -78,8 +81,8 @@ aircraft.battery.energy_density = unit.J_kWh(0.2)       # J/kg, # Battery energy
 aircraft.power_elec_chain.overall_efficiency = 0.2     # 0.90 from init.e_chain_efficiency()81785
 
 
-aircraft.economics.fuel_price = 2/unit.liter_usgal(1)   # 2 $/USgal
-aircraft.economics.elec_price = 0.15/unit.J_kWh(1)      # 0.05 $/kWh
+aircraft.economics.fuel_price = 1.708/unit.liter_usgal(1)   # 2 $/USgal
+aircraft.economics.elec_price = 0.1054/unit.J_kWh(1)      # 0.05 $/kWh
 
 
 # Design process
@@ -111,15 +114,15 @@ print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
 print("OWE = ","%.0f"%aircraft.weights.owe," kg")
 
 print("")
-#print("LoD cruise = ","%.2f"%(aircraft.aerodynamics.cruise_lod_max)," no_dim")
-#print("SFC cruise = ","%.3f"%(aircraft.propulsion.sfc_cruise_ref*36000)," kg/daN/h")
-#print("SEC cruise = ","%.3f"%(aircraft.propulsion.sec_cruise_ref/100)," kW/daN")
+print("LoD cruise = ","%.2f"%(aircraft.aerodynamics.cruise_lod_max)," no_dim")
+print("SFC cruise = ","%.3f"%(aircraft.propulsion.sfc_cruise_ref*36000)," kg/daN/h")
+print("SEC cruise = ","%.3f"%(aircraft.propulsion.sec_cruise_ref/100)," kW/daN")
 
 #print("")
 #print("MTO refernce thrust = ","%.1f"%(aircraft.propulsion.mto_thrust_ref/10)," daN")
 #print("MCN refernce thrust = ","%.1f"%(aircraft.propulsion.mcn_thrust_ref/10)," daN")
-#print("MCL refernce thrust = ","%.1f"%(aircraft.propulsion.mcl_thrust_ref/10)," daN")
-#print("MCR refernce thrust = ","%.1f"%(aircraft.propulsion.mcr_thrust_ref/10)," daN")
+print("MCL refernce thrust = ","%.1f"%(aircraft.propulsion.mcl_thrust_ref/10)," daN")
+print("MCR refernce thrust = ","%.1f"%(aircraft.propulsion.mcr_thrust_ref/10)," daN")
 
 print("")
 if (aircraft.propulsion.bli_thrust_factor!=None): print("Fan BLI thrust factor = ","%.4f"%aircraft.propulsion.bli_thrust_factor," no_dim")
@@ -164,14 +167,14 @@ print("Time to climb effective = ","%.1f"%unit.min_s(aircraft.high_speed.eff_ttc
 
 
 
-"""
+
 print("")
 print("--------------------------------------------------------------")
 print("MTOW = ","%.0f"%aircraft.weights.mtow," kg")
 print("Cost mission fuel = ","%.1f"%aircraft.cost_mission.block_fuel," kg")
 print("Cash Operating Cost = ","%.1f"%aircraft.economics.cash_operating_cost," $/trip")
 print("Carbon dioxid emission = ","%.1f"%(aircraft.cost_mission.block_CO2)," kg/trip")
-print("Direct Operation cost", "%.1f"%aircraft.economics.direct_operating_cost, "$/aircraft")
+print("Direct Operation cost", "%.1f"%aircraft.economics.direct_operating_cost, "$/trip")
 print("CO2 metric = ","%.4f"%(aircraft.environmental_impact.CO2_metric*1e7)," 10-7kg/km/m0.48")
 
 
@@ -182,7 +185,10 @@ print("total  fuel: %.2f"%aircraft.nominal_mission.total_fuel)
 
 
 print("mfw : %.2f"%aircraft.weights.mfw)
-"""
+print("payload: ","%.2f"%aircraft.nominal_mission.payload)
+print("Nominal mission fuel = ","%.1f"%(aircraft.nominal_mission.block_fuel)," kg")
+print("Maximum fuel weight = ","%.1f"%(aircraft.weights.mfw)," kg")
+
 
 """
 print("t : %.2f"%aircraft.max_payload_mission.block_time)
